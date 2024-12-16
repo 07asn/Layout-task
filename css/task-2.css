@@ -1,0 +1,54 @@
+body {
+    display: flex;
+    justify-content: center; /* Centers container horizontally */
+    align-items: center; /* Centers container vertically */
+    min-height: 100vh; /* Full height of the viewport */
+    background-color: #9cf5f3; /* Optional background color */
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container {
+    display: grid;
+    background-color: #c2c78a;
+    padding: 20px;
+    border-radius: 35px; 
+    width: 400px; 
+    box-shadow: 20px 20px 8px 5px rgba(0, 0, 0, 0.1);
+}
+
+.row {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 0;
+    border-bottom: 1px solid #ffffff;
+}
+
+.row img {
+    width: 100px; 
+    height: 100px;
+    border-radius: 50%;
+}
+
+.row:last-child {
+    border-bottom: none;
+}
+
+.row .info {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.row .info .name {
+    font-size: 22px;
+    font-weight: bold;
+    
+    
+}
+
+.row .info .department {
+    font-size: 18px;
+    color: rgb(60, 58, 58);
+}
